@@ -157,7 +157,7 @@
                 <div class="container">
                     <form class="validate" id="quote-form">
                         <!-- STEP 1 -->
-                        <div id="" class="card card-default">
+                        <div id="step-1" class="card card-default">
                             <div class="card-heading card-heading-transparent">
                                 <label class="card-title">
                                     <h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 1 |</span> Select Type of Building</h3>
@@ -165,7 +165,7 @@
                             </div>
                             <div class="card-block" style="margin: 20px">
                                 <!-- Building type selection -->
-                                <select id="" name="building-type" class="form-control pointer required">
+                                <select id="building-type" name="building-type" class="form-control pointer required">
                                     <option>---Select---</option>
                                     <option id="residential" value="residential">Residential</option>
                                     <option id="commercial" value="commercial">Commercial</option>
@@ -176,7 +176,7 @@
                         <!-- /STEP 1 -->
 
                         <!-- STEP 2 -->
-                        <div id="" class="estimate-num-elv card card-default">
+                        <div id="step-2" class="estimate-num-elv card card-default">
                             <div class="card-heading step-description">
                                 <h3>
                                     <span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 2 |</span> Provide Building Information
@@ -185,25 +185,25 @@
                             <div class="card-block">
                                 <div class="row" style="margin: 20px">
                                     <!-- Division of the input fields for number of apartments -->
-                                    <div id="" class="col-4">
+                                    <div id="div-number-of-apartments" class="col-4">
                                         <label><h4>Number of Apartments</h4>
                                             <input type="number" min="1" max="1000" class="form-control" required>
                                         </label>
                                     </div>
                                     <!-- Division of the input fields for number of floors -->
-                                    <div id="" class="col-4">
+                                    <div id="div-number-of-floors" class="col-4">
                                         <label><h4>Number of Floors</h4>
                                             <input type="number" min="1" max="1000" class="form-control" required>
                                         </label>
                                     </div>
                                     <!-- Division of the input fields for number of elevators -->
-                                    <div id="" class="col-4">
+                                    <div id="div-number-of-elevators" class="col-4">
                                         <label><h4>Number of Elevators</h4>
                                             <input type="number" min="1" max="1000" class="form-control" required>
                                         </label>
                                     </div>
                                     <!-- Division of the input fields for maximum occupancy -->
-                                    <div id="" class="col-4">
+                                    <div id="div-maximum-occupancy" class="col-4">
                                         <label><h4>Maximum Occupancy</h4>
                                             <input type="number" min="1" max="1000" class="form-control" required>
                                         </label>
@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="row" style="margin: 20px">
                                     <!-- Division of the read-only input fields for amount of elevators needed -->
-                                    <div id="" class="col-6">
+                                    <div id="div-amount-elevators-needed" class="col-6">
                                         <label><h4 style="margin-bottom: 0">Number of Elevators Required (Minimum of 1):</h4>
                                             <input type="number" class="form-control" readonly>
                                         </label>
@@ -223,33 +223,33 @@
                         <!-- /STEP 2 -->
 
                         <!-- STEP 3 -->
-                        <div id="" class="product-line card card-default">
+                        <div id="step-3" class="product-line card card-default">
                             <div class="card-heading card-heading-transparent">
                                 <h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 3 |</span> Select Product Line</h3>
                                 <p style="margin-bottom: 0;">* Excluding tax and offers (if applicable)</p>
                                 <p style="color: rgb(170, 69, 69); display: none; margin-bottom: 0;" id="warning-step-2">Complete Step 2 to Estimate Price</p>
                             </div>
                             <div class="card-block">
-                                <div id='' class='row'>
+                                <div id='radio-button-product-line' class='row'>
                                     <!-- Radio buttons for product line -->
                                     <div class="col-4" style="display:flex; justify-content: center;">
                                         <label class="standard radio">
                                             <!-- Radio button standard -->
-                                            <input type="radio" id="" name='radio-product-line'>
+                                            <input type="radio" id="radio-button-standard" name='radio-product-line'>
                                             <i></i> STANDARD ✭
                                         </label>
                                     </div>
                                     <div class="col-4" style="display:flex; justify-content: center;">
                                         <label class="premium radio">
                                             <!-- Radio button premium -->
-                                            <input type="radio" id="" name='radio-product-line'>
+                                            <input type="radio" id="radio-button-premium" name='radio-product-line'>
                                             <i></i> PREMIUM ✭✭
                                         </label>
                                     </div>
                                     <div class="col-4" style="display:flex; justify-content: center;">
                                         <label class="excelium radio">
                                             <!-- Radio button excelium -->
-                                            <input type="radio" id="" name='radio-product-line'>
+                                            <input type="radio" id="radio-button-excelium" name='radio-product-line'>
                                             <i></i> EXCELIUM ✭✭✭
                                         </label>
                                     </div>
@@ -259,7 +259,7 @@
                         <!-- /STEP 3 -->
 
                         <!-- STEP 4 -->
-                        <div id="" class="final-pricing-display card card-default">
+                        <div id="step-4" class="final-pricing-display card card-default">
                             <div class="card-heading card-heading-transparent">
                                 <h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 4 |</span> Estimated Pricing</h3>
                                 <p style="margin-bottom: 0;">* Excluding tax and offers (if applicable)</p>
@@ -276,7 +276,7 @@
                                             <h4>
                                                 <label>
                                                     <!-- Read-only input fields for elevator unit price -->
-                                                    <input id="" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
+                                                    <input id="elevator-unit-price" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
                                                 </label>
                                             </h4>
                                         </div>
@@ -290,7 +290,7 @@
                                             <h4>
                                                 <label>
                                                     <!-- Read-only input fields for elevator cost -->
-                                                    <input id="" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
+                                                    <input id="elevator-total-price" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
                                                 </label>
                                             </h4>
                                         </div>
@@ -304,7 +304,7 @@
                                             <h4>
                                                 <label>
                                                     <!-- Read-only input fields for installation fees -->
-                                                    <input id="" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
+                                                    <input id="installation-fees" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
                                                 </label>
                                             </h4>
                                         </div>
@@ -318,7 +318,7 @@
                                             <h4>
                                                 <label>
                                                     <!-- Read-only input fields for total cost -->
-                                                    <input id="" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
+                                                    <input id="total-cost" type="text" class="form-control" style="background: none; text-align:center; border: none; font-size:x-large" readonly>
                                                 </label>
                                             </h4>
                                         </div>
